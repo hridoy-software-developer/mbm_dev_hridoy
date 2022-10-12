@@ -1,0 +1,116 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost\/bibilog"
+        }
+    ],
+    "info": {
+        "name": "Bibilog",
+        "_postman_id": "c392d04a-3c63-4951-b896-33f7c89f3be5",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "api\/app_user\/list",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/app_user\/list",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/app_user\/list"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "bibilog_session=mkbg4o8nEYaXYXLo2PDHn8xBygNmX5xunBV8D5II; expires=Thu, 29-Sep-2022 08:44:10 GMT; Max-Age=7200; path=\/; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"statusCode\":200,\"message\":\"Success\",\"isError\":false,\"result\":[{\"id\":9,\"uuid\":\"0d92a42b-248b-3227-8afb-e7c2dc0cd0b4\",\"user_id\":8,\"first_name\":\"Julie\",\"last_name\":\"Lloyd\",\"nick_name\":\"Patricia Bell\",\"furigana_first_name\":\"\\u9ad8\\u6a4b \\u4eae\\u4ecb\",\"furigana_last_name\":\"\\u6c5f\\u53e4\\u7530 \\u7fd4\\u592a\",\"sex\":\"male\",\"dob\":\"1983-10-23\",\"area\":\"Studio 23\\nStewart Fords\\nNorth Damienfurt\\nLU2 7LJ\",\"phone_number\":\"(0928) 727 9602\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":8,\"name\":\"Sophie Thompson\",\"email\":\"wood.john@walsh.co.uk\",\"role\":\"user\",\"account_status\":\"active\"}},{\"id\":8,\"uuid\":\"0cc532b6-7362-38d8-bf2b-65aa3f52260e\",\"user_id\":2,\"first_name\":\"John\",\"last_name\":\"Morris\",\"nick_name\":\"Archie Gray\",\"furigana_first_name\":\"\\u5c71\\u53e3 \\u7f8e\\u52a0\\u5b50\",\"furigana_last_name\":\"\\u6e21\\u8fba \\u7d50\\u8863\",\"sex\":\"female\",\"dob\":\"1978-02-13\",\"area\":\"6 Lewis Brooks\\nWest Abigail\\nCH64 3TH\",\"phone_number\":\"09525 044899\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":2,\"name\":\"Riley Murray\",\"email\":\"allen.freddie@gmail.com\",\"role\":\"practitioner\",\"account_status\":\"active\"}},{\"id\":7,\"uuid\":\"ddb22d19-2d73-373b-89c7-4b8a924f0300\",\"user_id\":8,\"first_name\":\"Isabelle\",\"last_name\":\"Davies\",\"nick_name\":\"Mike Martin\",\"furigana_first_name\":\"\\u5c71\\u672c \\u821e\",\"furigana_last_name\":\"\\u4f50\\u3005\\u6728 \\u62d3\\u771f\",\"sex\":\"male\",\"dob\":\"1998-05-25\",\"area\":\"1 Joanne Cliffs\\nRyanfort\\nWF1 5HR\",\"phone_number\":\"06501610009\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":8,\"name\":\"Sophie Thompson\",\"email\":\"wood.john@walsh.co.uk\",\"role\":\"user\",\"account_status\":\"active\"}},{\"id\":6,\"uuid\":\"5834f9e7-eb38-384b-9bc1-e9c2f746bc5f\",\"user_id\":5,\"first_name\":\"Benjamin\",\"last_name\":\"Green\",\"nick_name\":\"Millie Graham\",\"furigana_first_name\":\"\\u559c\\u5d8b \\u5eb7\\u5f18\",\"furigana_last_name\":\"\\u5927\\u57a3 \\u5145\",\"sex\":\"male\",\"dob\":\"1978-07-26\",\"area\":\"41 Matthew Glen\\nLake Rossfort\\nLA8 9RA\",\"phone_number\":\"(0001) 597 7583\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":5,\"name\":\"Ruby Miller\",\"email\":\"crichardson@yahoo.com\",\"role\":\"practitioner\",\"account_status\":\"active\"}},{\"id\":5,\"uuid\":\"67e54ac6-7ed4-385f-93a6-56824a47fc94\",\"user_id\":4,\"first_name\":\"Rob\",\"last_name\":\"Bennett\",\"nick_name\":\"Fred Cook\",\"furigana_first_name\":\"\\u4e2d\\u6d25\\u5ddd \\u6d69\",\"furigana_last_name\":\"\\u6c5f\\u53e4\\u7530 \\u5145\",\"sex\":\"female\",\"dob\":\"1993-09-26\",\"area\":\"94 Watson Courts\\nVanessaland\\nLL12 9NR\",\"phone_number\":\"+44(0)7877 731257\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":4,\"name\":\"Jessica Ellis\",\"email\":\"stefan.lloyd@powell.com\",\"role\":\"practitioner\",\"account_status\":\"active\"}},{\"id\":4,\"uuid\":\"8f9eca55-ad6f-3b30-9a40-9e4e223a99ae\",\"user_id\":3,\"first_name\":\"Yvette\",\"last_name\":\"Morgan\",\"nick_name\":\"Jordan Jackson\",\"furigana_first_name\":\"\\u6751\\u5c71 \\u77e5\\u5b9f\",\"furigana_last_name\":\"\\u85e4\\u672c \\u967d\\u4e00\",\"sex\":\"female\",\"dob\":\"2005-06-20\",\"area\":\"306 Quentin Burgs\\nWest Ryan\\nSN7 8NR\",\"phone_number\":\"0845341654\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":3,\"name\":\"Anthony Kelly\",\"email\":\"iwalker@hunter.info\",\"role\":\"user\",\"account_status\":\"active\"}},{\"id\":3,\"uuid\":\"c12fab98-ef54-386d-a782-0694e193a2c6\",\"user_id\":6,\"first_name\":\"Becky\",\"last_name\":\"Davis\",\"nick_name\":\"Callum Lloyd\",\"furigana_first_name\":\"\\u5409\\u7530 \\u5343\\u4ee3\",\"furigana_last_name\":\"\\u85e4\\u672c \\u6843\\u5b50\",\"sex\":\"female\",\"dob\":\"1971-10-19\",\"area\":\"7 Smith Forges\\nNew Miafurt\\nSE1 7DB\",\"phone_number\":\"0720788864\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":6,\"name\":\"Poppy Phillips\",\"email\":\"amarshall@yahoo.co.uk\",\"role\":\"practitioner\",\"account_status\":\"active\"}},{\"id\":2,\"uuid\":\"96d89aba-11aa-3091-9e80-fbd47e394572\",\"user_id\":1,\"first_name\":\"Samuel\",\"last_name\":\"Wilkinson\",\"nick_name\":\"Evelyn Cook\",\"furigana_first_name\":\"\\u9234\\u6728 \\u4e03\\u590f\",\"furigana_last_name\":\"\\u5c71\\u672c \\u4eae\\u4ecb\",\"sex\":\"male\",\"dob\":\"1998-03-01\",\"area\":\"7 Lewis Rapid\\nDylanport\\nM28 7XP\",\"phone_number\":\"06480 761427\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":1,\"name\":\"Rebecca Brown\",\"email\":\"bibilog@jp.com\",\"role\":\"admin\",\"account_status\":\"active\"}},{\"id\":1,\"uuid\":\"52f89cab-b6f6-3101-b0d5-24435cb64c33\",\"user_id\":3,\"first_name\":\"Anna\",\"last_name\":\"Walsh\",\"nick_name\":\"Logan Lee\",\"furigana_first_name\":\"\\u7530\\u8fba \\u6625\\u9999\",\"furigana_last_name\":\"\\u5ee3\\u5ddd \\u5065\\u4e00\",\"sex\":\"male\",\"dob\":\"1980-08-22\",\"area\":\"10 Clarke Roads\\nGeorgeborough\\nCB2 3EN\",\"phone_number\":\"+44(0)8767 88194\",\"referance\":\"\",\"photo\":\"https:\\\/\\\/source.unsplash.com\\\/random\",\"status\":1,\"created_at\":\"2022-09-21T08:18:04.000000Z\",\"updated_at\":\"2022-09-21T08:18:04.000000Z\",\"user\":{\"id\":3,\"name\":\"Anthony Kelly\",\"email\":\"iwalker@hunter.info\",\"role\":\"user\",\"account_status\":\"active\"}}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "api\/app_user\/registration",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/app_user\/registration",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/app_user\/registration"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

@@ -1,0 +1,85 @@
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import "_bootstrap.css";
+
+.dash-content{
+	padding: 15px;
+	padding-top: 25px;
+}
+
+@media only screen and (min-width: 992px){
+	.dash-content{
+		padding: 15px;
+		padding-top: 25px;
+		max-width: calc(100vw - 258px);
+	}
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #bdd4fe;
+    outline: 0;
+    box-shadow: none;
+}
+
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+    box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+	border: 1px solid #dee2e6;
+}
+
+.validation_error{
+	margin-top: 5px;
+	color: tomato;
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+table {
+	margin-bottom: 0px !important;
+	border: 1px solid transparent !important;
+}
+table th,td{
+	vertical-align: middle !important;
+	white-space: nowrap !important;
+}
+.table-bordered th{
+	background: cadetblue;
+	color: white;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.table-bordered th, .table-bordered td {
+	border: 1px solid transparent !important;
+}
+
+.card
+{
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+	background: white;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.card > .header{
+	text-transform: capitalize;
+	padding: 10px 15px;
+	background: steelblue;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card > .body {
+	padding: 0px;
+	margin-top: -1px;
+	margin-left: -1px;
+}

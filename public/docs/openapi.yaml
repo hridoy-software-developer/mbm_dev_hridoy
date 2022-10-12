@@ -1,0 +1,517 @@
+openapi: 3.0.3
+info:
+  title: Bibilog
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost/bibilog'
+paths:
+  /api/app_user/list:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  statusCode: 200
+                  message: Success
+                  isError: false
+                  result:
+                    -
+                      id: 9
+                      uuid: 0d92a42b-248b-3227-8afb-e7c2dc0cd0b4
+                      user_id: 8
+                      first_name: Julie
+                      last_name: Lloyd
+                      nick_name: 'Patricia Bell'
+                      furigana_first_name: '高橋 亮介'
+                      furigana_last_name: '江古田 翔太'
+                      sex: male
+                      dob: '1983-10-23'
+                      area: "Studio 23\nStewart Fords\nNorth Damienfurt\nLU2 7LJ"
+                      phone_number: '(0928) 727 9602'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 8
+                        name: 'Sophie Thompson'
+                        email: wood.john@walsh.co.uk
+                        role: user
+                        account_status: active
+                    -
+                      id: 8
+                      uuid: 0cc532b6-7362-38d8-bf2b-65aa3f52260e
+                      user_id: 2
+                      first_name: John
+                      last_name: Morris
+                      nick_name: 'Archie Gray'
+                      furigana_first_name: '山口 美加子'
+                      furigana_last_name: '渡辺 結衣'
+                      sex: female
+                      dob: '1978-02-13'
+                      area: "6 Lewis Brooks\nWest Abigail\nCH64 3TH"
+                      phone_number: '09525 044899'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 2
+                        name: 'Riley Murray'
+                        email: allen.freddie@gmail.com
+                        role: practitioner
+                        account_status: active
+                    -
+                      id: 7
+                      uuid: ddb22d19-2d73-373b-89c7-4b8a924f0300
+                      user_id: 8
+                      first_name: Isabelle
+                      last_name: Davies
+                      nick_name: 'Mike Martin'
+                      furigana_first_name: '山本 舞'
+                      furigana_last_name: '佐々木 拓真'
+                      sex: male
+                      dob: '1998-05-25'
+                      area: "1 Joanne Cliffs\nRyanfort\nWF1 5HR"
+                      phone_number: '06501610009'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 8
+                        name: 'Sophie Thompson'
+                        email: wood.john@walsh.co.uk
+                        role: user
+                        account_status: active
+                    -
+                      id: 6
+                      uuid: 5834f9e7-eb38-384b-9bc1-e9c2f746bc5f
+                      user_id: 5
+                      first_name: Benjamin
+                      last_name: Green
+                      nick_name: 'Millie Graham'
+                      furigana_first_name: '喜嶋 康弘'
+                      furigana_last_name: '大垣 充'
+                      sex: male
+                      dob: '1978-07-26'
+                      area: "41 Matthew Glen\nLake Rossfort\nLA8 9RA"
+                      phone_number: '(0001) 597 7583'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 5
+                        name: 'Ruby Miller'
+                        email: crichardson@yahoo.com
+                        role: practitioner
+                        account_status: active
+                    -
+                      id: 5
+                      uuid: 67e54ac6-7ed4-385f-93a6-56824a47fc94
+                      user_id: 4
+                      first_name: Rob
+                      last_name: Bennett
+                      nick_name: 'Fred Cook'
+                      furigana_first_name: '中津川 浩'
+                      furigana_last_name: '江古田 充'
+                      sex: female
+                      dob: '1993-09-26'
+                      area: "94 Watson Courts\nVanessaland\nLL12 9NR"
+                      phone_number: '+44(0)7877 731257'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 4
+                        name: 'Jessica Ellis'
+                        email: stefan.lloyd@powell.com
+                        role: practitioner
+                        account_status: active
+                    -
+                      id: 4
+                      uuid: 8f9eca55-ad6f-3b30-9a40-9e4e223a99ae
+                      user_id: 3
+                      first_name: Yvette
+                      last_name: Morgan
+                      nick_name: 'Jordan Jackson'
+                      furigana_first_name: '村山 知実'
+                      furigana_last_name: '藤本 陽一'
+                      sex: female
+                      dob: '2005-06-20'
+                      area: "306 Quentin Burgs\nWest Ryan\nSN7 8NR"
+                      phone_number: '0845341654'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 3
+                        name: 'Anthony Kelly'
+                        email: iwalker@hunter.info
+                        role: user
+                        account_status: active
+                    -
+                      id: 3
+                      uuid: c12fab98-ef54-386d-a782-0694e193a2c6
+                      user_id: 6
+                      first_name: Becky
+                      last_name: Davis
+                      nick_name: 'Callum Lloyd'
+                      furigana_first_name: '吉田 千代'
+                      furigana_last_name: '藤本 桃子'
+                      sex: female
+                      dob: '1971-10-19'
+                      area: "7 Smith Forges\nNew Miafurt\nSE1 7DB"
+                      phone_number: '0720788864'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 6
+                        name: 'Poppy Phillips'
+                        email: amarshall@yahoo.co.uk
+                        role: practitioner
+                        account_status: active
+                    -
+                      id: 2
+                      uuid: 96d89aba-11aa-3091-9e80-fbd47e394572
+                      user_id: 1
+                      first_name: Samuel
+                      last_name: Wilkinson
+                      nick_name: 'Evelyn Cook'
+                      furigana_first_name: '鈴木 七夏'
+                      furigana_last_name: '山本 亮介'
+                      sex: male
+                      dob: '1998-03-01'
+                      area: "7 Lewis Rapid\nDylanport\nM28 7XP"
+                      phone_number: '06480 761427'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 1
+                        name: 'Rebecca Brown'
+                        email: bibilog@jp.com
+                        role: admin
+                        account_status: active
+                    -
+                      id: 1
+                      uuid: 52f89cab-b6f6-3101-b0d5-24435cb64c33
+                      user_id: 3
+                      first_name: Anna
+                      last_name: Walsh
+                      nick_name: 'Logan Lee'
+                      furigana_first_name: '田辺 春香'
+                      furigana_last_name: '廣川 健一'
+                      sex: male
+                      dob: '1980-08-22'
+                      area: "10 Clarke Roads\nGeorgeborough\nCB2 3EN"
+                      phone_number: '+44(0)8767 88194'
+                      referance: ''
+                      photo: 'https://source.unsplash.com/random'
+                      status: 1
+                      created_at: '2022-09-21T08:18:04.000000Z'
+                      updated_at: '2022-09-21T08:18:04.000000Z'
+                      user:
+                        id: 3
+                        name: 'Anthony Kelly'
+                        email: iwalker@hunter.info
+                        role: user
+                        account_status: active
+                properties:
+                  statusCode:
+                    type: integer
+                    example: 200
+                  message:
+                    type: string
+                    example: Success
+                  isError:
+                    type: boolean
+                    example: false
+                  result:
+                    type: array
+                    example:
+                      -
+                        id: 9
+                        uuid: 0d92a42b-248b-3227-8afb-e7c2dc0cd0b4
+                        user_id: 8
+                        first_name: Julie
+                        last_name: Lloyd
+                        nick_name: 'Patricia Bell'
+                        furigana_first_name: '高橋 亮介'
+                        furigana_last_name: '江古田 翔太'
+                        sex: male
+                        dob: '1983-10-23'
+                        area: "Studio 23\nStewart Fords\nNorth Damienfurt\nLU2 7LJ"
+                        phone_number: '(0928) 727 9602'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 8
+                          name: 'Sophie Thompson'
+                          email: wood.john@walsh.co.uk
+                          role: user
+                          account_status: active
+                      -
+                        id: 8
+                        uuid: 0cc532b6-7362-38d8-bf2b-65aa3f52260e
+                        user_id: 2
+                        first_name: John
+                        last_name: Morris
+                        nick_name: 'Archie Gray'
+                        furigana_first_name: '山口 美加子'
+                        furigana_last_name: '渡辺 結衣'
+                        sex: female
+                        dob: '1978-02-13'
+                        area: "6 Lewis Brooks\nWest Abigail\nCH64 3TH"
+                        phone_number: '09525 044899'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 2
+                          name: 'Riley Murray'
+                          email: allen.freddie@gmail.com
+                          role: practitioner
+                          account_status: active
+                      -
+                        id: 7
+                        uuid: ddb22d19-2d73-373b-89c7-4b8a924f0300
+                        user_id: 8
+                        first_name: Isabelle
+                        last_name: Davies
+                        nick_name: 'Mike Martin'
+                        furigana_first_name: '山本 舞'
+                        furigana_last_name: '佐々木 拓真'
+                        sex: male
+                        dob: '1998-05-25'
+                        area: "1 Joanne Cliffs\nRyanfort\nWF1 5HR"
+                        phone_number: '06501610009'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 8
+                          name: 'Sophie Thompson'
+                          email: wood.john@walsh.co.uk
+                          role: user
+                          account_status: active
+                      -
+                        id: 6
+                        uuid: 5834f9e7-eb38-384b-9bc1-e9c2f746bc5f
+                        user_id: 5
+                        first_name: Benjamin
+                        last_name: Green
+                        nick_name: 'Millie Graham'
+                        furigana_first_name: '喜嶋 康弘'
+                        furigana_last_name: '大垣 充'
+                        sex: male
+                        dob: '1978-07-26'
+                        area: "41 Matthew Glen\nLake Rossfort\nLA8 9RA"
+                        phone_number: '(0001) 597 7583'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 5
+                          name: 'Ruby Miller'
+                          email: crichardson@yahoo.com
+                          role: practitioner
+                          account_status: active
+                      -
+                        id: 5
+                        uuid: 67e54ac6-7ed4-385f-93a6-56824a47fc94
+                        user_id: 4
+                        first_name: Rob
+                        last_name: Bennett
+                        nick_name: 'Fred Cook'
+                        furigana_first_name: '中津川 浩'
+                        furigana_last_name: '江古田 充'
+                        sex: female
+                        dob: '1993-09-26'
+                        area: "94 Watson Courts\nVanessaland\nLL12 9NR"
+                        phone_number: '+44(0)7877 731257'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 4
+                          name: 'Jessica Ellis'
+                          email: stefan.lloyd@powell.com
+                          role: practitioner
+                          account_status: active
+                      -
+                        id: 4
+                        uuid: 8f9eca55-ad6f-3b30-9a40-9e4e223a99ae
+                        user_id: 3
+                        first_name: Yvette
+                        last_name: Morgan
+                        nick_name: 'Jordan Jackson'
+                        furigana_first_name: '村山 知実'
+                        furigana_last_name: '藤本 陽一'
+                        sex: female
+                        dob: '2005-06-20'
+                        area: "306 Quentin Burgs\nWest Ryan\nSN7 8NR"
+                        phone_number: '0845341654'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 3
+                          name: 'Anthony Kelly'
+                          email: iwalker@hunter.info
+                          role: user
+                          account_status: active
+                      -
+                        id: 3
+                        uuid: c12fab98-ef54-386d-a782-0694e193a2c6
+                        user_id: 6
+                        first_name: Becky
+                        last_name: Davis
+                        nick_name: 'Callum Lloyd'
+                        furigana_first_name: '吉田 千代'
+                        furigana_last_name: '藤本 桃子'
+                        sex: female
+                        dob: '1971-10-19'
+                        area: "7 Smith Forges\nNew Miafurt\nSE1 7DB"
+                        phone_number: '0720788864'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 6
+                          name: 'Poppy Phillips'
+                          email: amarshall@yahoo.co.uk
+                          role: practitioner
+                          account_status: active
+                      -
+                        id: 2
+                        uuid: 96d89aba-11aa-3091-9e80-fbd47e394572
+                        user_id: 1
+                        first_name: Samuel
+                        last_name: Wilkinson
+                        nick_name: 'Evelyn Cook'
+                        furigana_first_name: '鈴木 七夏'
+                        furigana_last_name: '山本 亮介'
+                        sex: male
+                        dob: '1998-03-01'
+                        area: "7 Lewis Rapid\nDylanport\nM28 7XP"
+                        phone_number: '06480 761427'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 1
+                          name: 'Rebecca Brown'
+                          email: bibilog@jp.com
+                          role: admin
+                          account_status: active
+                      -
+                        id: 1
+                        uuid: 52f89cab-b6f6-3101-b0d5-24435cb64c33
+                        user_id: 3
+                        first_name: Anna
+                        last_name: Walsh
+                        nick_name: 'Logan Lee'
+                        furigana_first_name: '田辺 春香'
+                        furigana_last_name: '廣川 健一'
+                        sex: male
+                        dob: '1980-08-22'
+                        area: "10 Clarke Roads\nGeorgeborough\nCB2 3EN"
+                        phone_number: '+44(0)8767 88194'
+                        referance: ''
+                        photo: 'https://source.unsplash.com/random'
+                        status: 1
+                        created_at: '2022-09-21T08:18:04.000000Z'
+                        updated_at: '2022-09-21T08:18:04.000000Z'
+                        user:
+                          id: 3
+                          name: 'Anthony Kelly'
+                          email: iwalker@hunter.info
+                          role: user
+                          account_status: active
+                    items:
+                      type: object
+      tags:
+        - Endpoints
+      security: []
+  /api/app_user/registration:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

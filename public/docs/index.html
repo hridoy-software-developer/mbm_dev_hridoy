@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Bibilog Documentation</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../docs/css/theme-default.style.css" media="screen">
+    <link rel="stylesheet" href="../docs/css/theme-default.print.css" media="print">
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/styles/obsidian.min.css">
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.14.1/jets.min.js"></script>
+
+    <style id="language-style">
+        /* starts out as display none and is replaced with js later  */
+                    body .content .bash-example code { display: none; }
+                    body .content .javascript-example code { display: none; }
+            </style>
+
+    <script>
+        var baseUrl = "http:";
+        var useCsrf = Boolean();
+        var csrfUrl = "/sanctum/csrf-cookie";
+    </script>
+    <script src="../docs/js/tryitout-4.0.0.js"></script>
+
+    <script src="../docs/js/theme-default-4.0.0.js"></script>
+
+</head>
+
+<body data-languages="[&quot;bash&quot;,&quot;javascript&quot;]">
+
+<a href="#" id="nav-button">
+    <span>
+        MENU
+        <img src="../docs/images/navbar.png" alt="navbar-image" />
+    </span>
+</a>
+<div class="tocify-wrapper">
+    
+            <div class="lang-selector">
+                                            <button type="button" class="lang-button" data-language-name="bash">bash</button>
+                                            <button type="button" class="lang-button" data-language-name="javascript">javascript</button>
+                    </div>
+    
+    <div class="search">
+        <input type="text" class="search" id="input-search" placeholder="Search">
+    </div>
+
+    <div id="toc">
+                    <ul id="tocify-header-introduction" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="introduction">
+                    <a href="#introduction">Introduction</a>
+                </li>
+                            </ul>
+                    <ul id="tocify-header-authenticating-requests" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="authenticating-requests">
+                    <a href="#authenticating-requests">Authenticating requests</a>
+                </li>
+                            </ul>
+                    <ul id="tocify-header-endpoints" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="endpoints">
+                    <a href="#endpoints">Endpoints</a>
+                </li>
+                                    <ul id="tocify-subheader-endpoints" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-app_user-list">
+                                <a href="#endpoints-GETapi-app_user-list">GET api/app_user/list</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-app_user-registration">
+                                <a href="#endpoints-POSTapi-app_user-registration">POST api/app_user/registration</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
+            </div>
+
+            <ul class="toc-footer" id="toc-footer">
+                            <li><a href="../docs/collection.json">View Postman collection</a></li>
+                            <li><a href="../docs/openapi.yaml">View OpenAPI spec</a></li>
+                            <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
+                    </ul>
+        <ul class="toc-footer" id="last-updated">
+        <li>Last updated: September 29 2022</li>
+    </ul>
+</div>
+
+<div class="page-wrapper">
+    <div class="dark-box"></div>
+    <div class="content">
+        <h1 id="introduction">Introduction</h1>
+<p>This documentation aims to provide all the information you need to work with our API.</p>
+<aside>As you scroll, you'll see code examples for working with the API in different programming languages in the dark area to the right (or as part of the content on mobile).
+You can switch the language used with the tabs at the top right (or from the nav menu at the top left on mobile).</aside>
+<blockquote>
+<p>Base URL</p>
+</blockquote>
+<pre><code class="language-yaml">http://localhost/bibilog</code></pre>
+
+        <h1 id="authenticating-requests">Authenticating requests</h1>
+<p>This API is not authenticated.</p>
+
+        <h1 id="endpoints">Endpoints</h1>
+
+    
+
+                                <h2 id="endpoints-GETapi-app_user-list">GET api/app_user/list</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-app_user-list">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/bibilog/api/app_user/list" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/bibilog/api/app_user/list"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-app_user-list">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+access-control-allow-origin: *
+set-cookie: bibilog_session=mkbg4o8nEYaXYXLo2PDHn8xBygNmX5xunBV8D5II; expires=Thu, 29-Sep-2022 08:44:10 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;statusCode&quot;: 200,
+    &quot;message&quot;: &quot;Success&quot;,
+    &quot;isError&quot;: false,
+    &quot;result&quot;: [
+        {
+            &quot;id&quot;: 9,
+            &quot;uuid&quot;: &quot;0d92a42b-248b-3227-8afb-e7c2dc0cd0b4&quot;,
+            &quot;user_id&quot;: 8,
+            &quot;first_name&quot;: &quot;Julie&quot;,
+            &quot;last_name&quot;: &quot;Lloyd&quot;,
+            &quot;nick_name&quot;: &quot;Patricia Bell&quot;,
+            &quot;furigana_first_name&quot;: &quot;高橋 亮介&quot;,
+            &quot;furigana_last_name&quot;: &quot;江古田 翔太&quot;,
+            &quot;sex&quot;: &quot;male&quot;,
+            &quot;dob&quot;: &quot;1983-10-23&quot;,
+            &quot;area&quot;: &quot;Studio 23\nStewart Fords\nNorth Damienfurt\nLU2 7LJ&quot;,
+            &quot;phone_number&quot;: &quot;(0928) 727 9602&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 8,
+                &quot;name&quot;: &quot;Sophie Thompson&quot;,
+                &quot;email&quot;: &quot;wood.john@walsh.co.uk&quot;,
+                &quot;role&quot;: &quot;user&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;uuid&quot;: &quot;0cc532b6-7362-38d8-bf2b-65aa3f52260e&quot;,
+            &quot;user_id&quot;: 2,
+            &quot;first_name&quot;: &quot;John&quot;,
+            &quot;last_name&quot;: &quot;Morris&quot;,
+            &quot;nick_name&quot;: &quot;Archie Gray&quot;,
+            &quot;furigana_first_name&quot;: &quot;山口 美加子&quot;,
+            &quot;furigana_last_name&quot;: &quot;渡辺 結衣&quot;,
+            &quot;sex&quot;: &quot;female&quot;,
+            &quot;dob&quot;: &quot;1978-02-13&quot;,
+            &quot;area&quot;: &quot;6 Lewis Brooks\nWest Abigail\nCH64 3TH&quot;,
+            &quot;phone_number&quot;: &quot;09525 044899&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;Riley Murray&quot;,
+                &quot;email&quot;: &quot;allen.freddie@gmail.com&quot;,
+                &quot;role&quot;: &quot;practitioner&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;uuid&quot;: &quot;ddb22d19-2d73-373b-89c7-4b8a924f0300&quot;,
+            &quot;user_id&quot;: 8,
+            &quot;first_name&quot;: &quot;Isabelle&quot;,
+            &quot;last_name&quot;: &quot;Davies&quot;,
+            &quot;nick_name&quot;: &quot;Mike Martin&quot;,
+            &quot;furigana_first_name&quot;: &quot;山本 舞&quot;,
+            &quot;furigana_last_name&quot;: &quot;佐々木 拓真&quot;,
+            &quot;sex&quot;: &quot;male&quot;,
+            &quot;dob&quot;: &quot;1998-05-25&quot;,
+            &quot;area&quot;: &quot;1 Joanne Cliffs\nRyanfort\nWF1 5HR&quot;,
+            &quot;phone_number&quot;: &quot;06501610009&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 8,
+                &quot;name&quot;: &quot;Sophie Thompson&quot;,
+                &quot;email&quot;: &quot;wood.john@walsh.co.uk&quot;,
+                &quot;role&quot;: &quot;user&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;uuid&quot;: &quot;5834f9e7-eb38-384b-9bc1-e9c2f746bc5f&quot;,
+            &quot;user_id&quot;: 5,
+            &quot;first_name&quot;: &quot;Benjamin&quot;,
+            &quot;last_name&quot;: &quot;Green&quot;,
+            &quot;nick_name&quot;: &quot;Millie Graham&quot;,
+            &quot;furigana_first_name&quot;: &quot;喜嶋 康弘&quot;,
+            &quot;furigana_last_name&quot;: &quot;大垣 充&quot;,
+            &quot;sex&quot;: &quot;male&quot;,
+            &quot;dob&quot;: &quot;1978-07-26&quot;,
+            &quot;area&quot;: &quot;41 Matthew Glen\nLake Rossfort\nLA8 9RA&quot;,
+            &quot;phone_number&quot;: &quot;(0001) 597 7583&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 5,
+                &quot;name&quot;: &quot;Ruby Miller&quot;,
+                &quot;email&quot;: &quot;crichardson@yahoo.com&quot;,
+                &quot;role&quot;: &quot;practitioner&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;uuid&quot;: &quot;67e54ac6-7ed4-385f-93a6-56824a47fc94&quot;,
+            &quot;user_id&quot;: 4,
+            &quot;first_name&quot;: &quot;Rob&quot;,
+            &quot;last_name&quot;: &quot;Bennett&quot;,
+            &quot;nick_name&quot;: &quot;Fred Cook&quot;,
+            &quot;furigana_first_name&quot;: &quot;中津川 浩&quot;,
+            &quot;furigana_last_name&quot;: &quot;江古田 充&quot;,
+            &quot;sex&quot;: &quot;female&quot;,
+            &quot;dob&quot;: &quot;1993-09-26&quot;,
+            &quot;area&quot;: &quot;94 Watson Courts\nVanessaland\nLL12 9NR&quot;,
+            &quot;phone_number&quot;: &quot;+44(0)7877 731257&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 4,
+                &quot;name&quot;: &quot;Jessica Ellis&quot;,
+                &quot;email&quot;: &quot;stefan.lloyd@powell.com&quot;,
+                &quot;role&quot;: &quot;practitioner&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;uuid&quot;: &quot;8f9eca55-ad6f-3b30-9a40-9e4e223a99ae&quot;,
+            &quot;user_id&quot;: 3,
+            &quot;first_name&quot;: &quot;Yvette&quot;,
+            &quot;last_name&quot;: &quot;Morgan&quot;,
+            &quot;nick_name&quot;: &quot;Jordan Jackson&quot;,
+            &quot;furigana_first_name&quot;: &quot;村山 知実&quot;,
+            &quot;furigana_last_name&quot;: &quot;藤本 陽一&quot;,
+            &quot;sex&quot;: &quot;female&quot;,
+            &quot;dob&quot;: &quot;2005-06-20&quot;,
+            &quot;area&quot;: &quot;306 Quentin Burgs\nWest Ryan\nSN7 8NR&quot;,
+            &quot;phone_number&quot;: &quot;0845341654&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 3,
+                &quot;name&quot;: &quot;Anthony Kelly&quot;,
+                &quot;email&quot;: &quot;iwalker@hunter.info&quot;,
+                &quot;role&quot;: &quot;user&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;uuid&quot;: &quot;c12fab98-ef54-386d-a782-0694e193a2c6&quot;,
+            &quot;user_id&quot;: 6,
+            &quot;first_name&quot;: &quot;Becky&quot;,
+            &quot;last_name&quot;: &quot;Davis&quot;,
+            &quot;nick_name&quot;: &quot;Callum Lloyd&quot;,
+            &quot;furigana_first_name&quot;: &quot;吉田 千代&quot;,
+            &quot;furigana_last_name&quot;: &quot;藤本 桃子&quot;,
+            &quot;sex&quot;: &quot;female&quot;,
+            &quot;dob&quot;: &quot;1971-10-19&quot;,
+            &quot;area&quot;: &quot;7 Smith Forges\nNew Miafurt\nSE1 7DB&quot;,
+            &quot;phone_number&quot;: &quot;0720788864&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 6,
+                &quot;name&quot;: &quot;Poppy Phillips&quot;,
+                &quot;email&quot;: &quot;amarshall@yahoo.co.uk&quot;,
+                &quot;role&quot;: &quot;practitioner&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;uuid&quot;: &quot;96d89aba-11aa-3091-9e80-fbd47e394572&quot;,
+            &quot;user_id&quot;: 1,
+            &quot;first_name&quot;: &quot;Samuel&quot;,
+            &quot;last_name&quot;: &quot;Wilkinson&quot;,
+            &quot;nick_name&quot;: &quot;Evelyn Cook&quot;,
+            &quot;furigana_first_name&quot;: &quot;鈴木 七夏&quot;,
+            &quot;furigana_last_name&quot;: &quot;山本 亮介&quot;,
+            &quot;sex&quot;: &quot;male&quot;,
+            &quot;dob&quot;: &quot;1998-03-01&quot;,
+            &quot;area&quot;: &quot;7 Lewis Rapid\nDylanport\nM28 7XP&quot;,
+            &quot;phone_number&quot;: &quot;06480 761427&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Rebecca Brown&quot;,
+                &quot;email&quot;: &quot;bibilog@jp.com&quot;,
+                &quot;role&quot;: &quot;admin&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        },
+        {
+            &quot;id&quot;: 1,
+            &quot;uuid&quot;: &quot;52f89cab-b6f6-3101-b0d5-24435cb64c33&quot;,
+            &quot;user_id&quot;: 3,
+            &quot;first_name&quot;: &quot;Anna&quot;,
+            &quot;last_name&quot;: &quot;Walsh&quot;,
+            &quot;nick_name&quot;: &quot;Logan Lee&quot;,
+            &quot;furigana_first_name&quot;: &quot;田辺 春香&quot;,
+            &quot;furigana_last_name&quot;: &quot;廣川 健一&quot;,
+            &quot;sex&quot;: &quot;male&quot;,
+            &quot;dob&quot;: &quot;1980-08-22&quot;,
+            &quot;area&quot;: &quot;10 Clarke Roads\nGeorgeborough\nCB2 3EN&quot;,
+            &quot;phone_number&quot;: &quot;+44(0)8767 88194&quot;,
+            &quot;referance&quot;: &quot;&quot;,
+            &quot;photo&quot;: &quot;https://source.unsplash.com/random&quot;,
+            &quot;status&quot;: 1,
+            &quot;created_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2022-09-21T08:18:04.000000Z&quot;,
+            &quot;user&quot;: {
+                &quot;id&quot;: 3,
+                &quot;name&quot;: &quot;Anthony Kelly&quot;,
+                &quot;email&quot;: &quot;iwalker@hunter.info&quot;,
+                &quot;role&quot;: &quot;user&quot;,
+                &quot;account_status&quot;: &quot;active&quot;
+            }
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-app_user-list" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-app_user-list"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-app_user-list"></code></pre>
+</span>
+<span id="execution-error-GETapi-app_user-list" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-app_user-list"></code></pre>
+</span>
+<form id="form-GETapi-app_user-list" data-method="GET"
+      data-path="api/app_user/list"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-app_user-list', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-app_user-list"
+                    onclick="tryItOut('GETapi-app_user-list');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-app_user-list"
+                    onclick="cancelTryOut('GETapi-app_user-list');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-app_user-list" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/app_user/list</code></b>
+        </p>
+                    </form>
+
+                    <h2 id="endpoints-POSTapi-app_user-registration">POST api/app_user/registration</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-app_user-registration">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/bibilog/api/app_user/registration" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/bibilog/api/app_user/registration"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-app_user-registration">
+</span>
+<span id="execution-results-POSTapi-app_user-registration" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-app_user-registration"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-app_user-registration"></code></pre>
+</span>
+<span id="execution-error-POSTapi-app_user-registration" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-app_user-registration"></code></pre>
+</span>
+<form id="form-POSTapi-app_user-registration" data-method="POST"
+      data-path="api/app_user/registration"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-app_user-registration', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-app_user-registration"
+                    onclick="tryItOut('POSTapi-app_user-registration');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-app_user-registration"
+                    onclick="cancelTryOut('POSTapi-app_user-registration');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-app_user-registration" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/app_user/registration</code></b>
+        </p>
+                    </form>
+
+            
+
+        
+    </div>
+    <div class="dark-box">
+                    <div class="lang-selector">
+                                                        <button type="button" class="lang-button" data-language-name="bash">bash</button>
+                                                        <button type="button" class="lang-button" data-language-name="javascript">javascript</button>
+                            </div>
+            </div>
+</div>
+</body>
+</html>
